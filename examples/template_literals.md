@@ -1,70 +1,37 @@
 # keithwhor/nodal
-[core/required/db/adapters/postgres.js](https://github.com/keithwhor/nodal/blob/master/core/required/db/adapters/postgres.js#L181)
+[core/required/db/adapters/postgres.js](https://github.com/keithwhor/nodal/blob/master/core/required/db/adapters/postgres.js#L180)
 ```javascript
-// This is the slice of code, visit the link above to review the full source 
-
+// This is the slice of code, visit the link above to review the full source
+    this.query(this.generateDropDatabaseQuery(databaseName), [], (err, result) => {
+      if (err) {
+        return callback(err);
+      }
       this.db.info(`Dropped database "${databaseName}"`);
       callback(null);
-
+    });
 ```
 # dthree/vorpal
 [lib/util.js](https://github.com/dthree/vorpal/blob/master/lib/util.js#L356)
 ```javascript
 // This is the slice of code, visit the link above to review the full source 
+  humanReadableArgName: function (arg) {
     const nameOutput = arg.name + (arg.variadic === true ? '...' : '');
     return arg.required ?
       `<${nameOutput}>` :
       `[${nameOutput}]`;
+  }
 ```
-# react-bootstrap/react-bootstrap
-[test/TabsSpec.js](https://github.com/react-bootstrap/react-bootstrap/blob/master/test/TabsSpec.js#L439)
-```javascript
-// This is the slice of code, visit the link above to review the full source 
 
-```
-# eslint/eslint
-[tests/lib/rules/no-unused-vars.js](https://github.com/eslint/eslint/blob/master/tests/lib/rules/no-unused-vars.js#L73)
-```javascript
-// This is the slice of code, visit the link above to review the full source 
-        "(function z() { z(); })();",
-        { code: " ", globals: {a: true} },
-        { code: "var who = \"Paul\";\nmodule.exports = `Hello ${who}!`;", parserOptions: { ecmaVersion: 6 }},
-        { code: "export var foo = 123;", parserOptions: { sourceType: "module" }},
-```
 # angular/angular-cli
-[tests/acceptance/github-pages-deploy.spec.js](https://github.com/angular/angular-cli/blob/master/tests/acceptance/github-pages-deploy.spec.js#L76)
+[tests/acceptance/github-pages-deploy.spec.js](https://github.com/angular/angular-cli/blob/master/tests/acceptance/github-pages-deploy.spec.js#L74)
 ```javascript
 // This is the slice of code, visit the link above to review the full source 
       .addExecSuccess(`git checkout ${ghPagesBranch}`)
       .addExecSuccess('git add .')
       .addExecSuccess(`git commit -m "${message}"`)
       .addExecSuccess(`git checkout ${initialBranch}`)
-```
-# facebook/relay
-[website-prototyping-tools/evalSchema.js](https://github.com/facebook/relay/blob/master/website-prototyping-tools/evalSchema.js#L24)
-```javascript
-// This is the slice of code, visit the link above to review the full source 
-      case 'graphql-relay': return GraphQLRelay;
-
-      default: throw new Error(`Cannot find module "${path}"`);
-    }
-```
-# emberjs/ember.js
-[packages/ember-htmlbars/lib/keywords/closure-action.js](https://github.com/emberjs/ember.js/blob/master/packages/ember-htmlbars/lib/keywords/closure-action.js#L59)
-```javascript
-// This is the slice of code, visit the link above to review the full source 
-        action = action[INVOKE];
-      } else if (actionType !== 'function') {
-        throw new EmberError(`An action could not be made for \`${rawAction.label}\` in ${target}. Please confirm that you are using either a quoted action name (i.e. \`(action '${rawAction.label}')\`) or a function available in ${target}.`);
-      }
-```
-[packages/ember-htmlbars/lib/keywords/mut.js](https://github.com/emberjs/ember.js/blob/master/packages/ember-htmlbars/lib/keywords/mut.js#L122)
-```javascript
-// This is the slice of code, visit the link above to review the full source 
-  init(literal) {
-    this.literal = literal;
-    this.label = `(literal ${literal})`;
-  },
+      .addExecSuccess(`git push origin ${ghPagesBranch}:${ghPagesBranch}`)
+      .addExecSuccess('git remote -v', remote);
 ```
 # stylelint/stylelint
 [src/rules/at-rule-whitelist/index.js](https://github.com/stylelint/stylelint/blob/master/src/rules/at-rule-whitelist/index.js#L13)
@@ -74,14 +41,6 @@ export const messages = ruleMessages(ruleName, {
   rejected: (name) => `Unexpected at-rule "${name}"`,
 })
 
-```
-[src/rules/function-calc-no-unspaced-operator/index.js](https://github.com/stylelint/stylelint/blob/master/src/rules/function-calc-no-unspaced-operator/index.js#L16)
-```javascript
-// This is the slice of code, visit the link above to review the full source 
-  expectedBefore: operator => `Expected single space before "${operator}" operator`,
-  expectedAfter: operator => `Expected single space after "${operator}" operator`,
-  expectedOperatorBeforeSign: operator => `Expected an operator before sign "${operator}"`,
-})
 ```
 # graphql/graphql-js
 [src/validation/rules/FieldsOnCorrectType.js](https://github.com/graphql/graphql-js/blob/master/src/validation/rules/FieldsOnCorrectType.js#L34)
