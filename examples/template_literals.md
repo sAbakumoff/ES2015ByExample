@@ -1,12 +1,3 @@
-# Microsoft/TypeScript
-[tests/baselines/reference/templateStringBinaryOperationsES6Invalid.js](https://github.com/Microsoft/TypeScript/blob/master/tests/baselines/reference/templateStringBinaryOperationsES6Invalid.js#L115)
-```javascript
-// This is the slice of code, visit the link above to review the full source 
-var b = 1 - `2${3}`;
-var c = 1 - `${3}4`;
-var d = 1 - `2${3}4`;
-var e = `${3}` - 5;
-```
 # keithwhor/nodal
 [core/required/db/adapters/postgres.js](https://github.com/keithwhor/nodal/blob/master/core/required/db/adapters/postgres.js#L181)
 ```javascript
@@ -16,15 +7,6 @@ var e = `${3}` - 5;
       callback(null);
 
 ```
-# MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-
-[src/inject/settings/index.js](https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-/blob/master/src/inject/settings/index.js#L32)
-```javascript
-// This is the slice of code, visit the link above to review the full source 
-                        [theme] .input-field input[type=text]:focus {border-bottom-color:${color};
-                                                                  box-shadow: 0 1px 0 0 ${color};}`;
-        const button = `[theme] .btn{background:${color}}`;
-        const switch_ = '.switch label input[type=checkbox]:checked+.lever{background:#aaa}';
-```
 # dthree/vorpal
 [lib/util.js](https://github.com/dthree/vorpal/blob/master/lib/util.js#L356)
 ```javascript
@@ -33,6 +15,12 @@ var e = `${3}` - 5;
     return arg.required ?
       `<${nameOutput}>` :
       `[${nameOutput}]`;
+```
+# react-bootstrap/react-bootstrap
+[test/TabsSpec.js](https://github.com/react-bootstrap/react-bootstrap/blob/master/test/TabsSpec.js#L439)
+```javascript
+// This is the slice of code, visit the link above to review the full source 
+
 ```
 # eslint/eslint
 [tests/lib/rules/no-unused-vars.js](https://github.com/eslint/eslint/blob/master/tests/lib/rules/no-unused-vars.js#L73)
@@ -122,6 +110,15 @@ export default function(scriptName, buildPath) {
         this.props.onChange(this.props.name, new Function(`return ${response};`)());
       } catch(e) {
 ```
+# rauchg/slackin
+[lib/index.js](https://github.com/rauchg/slackin/blob/master/lib/index.js#L99)
+```javascript
+// This is the slice of code, visit the link above to review the full source 
+      coc,
+      logo,
+      channels,
+      active,
+```
 # tgriesser/knex
 [src/dialects/oracle/schema/columncompiler.js](https://github.com/tgriesser/knex/blob/master/src/dialects/oracle/schema/columncompiler.js#L55)
 ```javascript
@@ -139,6 +136,15 @@ export default function(scriptName, buildPath) {
                 expect(consoleError.calls[1].arguments[0]).toContain(
                     `[React Intl] Error formatting the default message for: "${id}"`
                 );
+```
+# facebook/jest
+[packages/jest-cli/src/SearchSource.js](https://github.com/facebook/jest/blob/master/packages/jest-cli/src/SearchSource.js#L209)
+```javascript
+// This is the slice of code, visit the link above to review the full source 
+      return 'No tests found related to changed and uncommitted files.\n' +
+        'Note: If you are using dynamic `require`-calls or no tests related ' +
+        'to your changed files can be found, consider ' + guide + '.';
+    }
 ```
 # andrewngu/sound-redux
 [scripts/components/Comment.js](https://github.com/andrewngu/sound-redux/blob/master/scripts/components/Comment.js#L21)
@@ -191,6 +197,15 @@ export default function(scriptName, buildPath) {
     return parseStatement `return ${index};`
   }
 ```
+# adonisjs/adonis-framework
+[src/View/Form/index.js](https://github.com/adonisjs/adonis-framework/blob/develop/src/View/Form/index.js#L198)
+```javascript
+// This is the slice of code, visit the link above to review the full source 
+
+    let url = this._getUrl(options)
+    const actualMethod = options.method || 'POST'
+    const method = this._getMethod(actualMethod)
+```
 # redfin/react-server
 [packages/react-server/core/util/PageUtil.js](https://github.com/redfin/react-server/blob/master/packages/react-server/core/util/PageUtil.js#L243)
 ```javascript
@@ -208,4 +223,118 @@ export default function(scriptName, buildPath) {
     if(/^\s*\{/.test(text) && /\}\s*$/.test(text)) {
       return `(${text})`;
     }
+```
+# keybase/client
+[shared/common-adapters/icon.desktop.js](https://github.com/keybase/client/blob/master/shared/common-adapters/icon.desktop.js#L55)
+```javascript
+// This is the slice of code, visit the link above to review the full source 
+        onClick={this.props.onClick}
+        srcSet={imgPath(iconType, ext)} />
+    }
+  }
+```
+# arangodb/arangodb
+[3rdParty/V8/V8-5.0.71.39/test/mjsunit/es6/block-let-semantics.js](https://github.com/arangodb/arangodb/blob/devel/3rdParty/V8/V8-5.0.71.39/test/mjsunit/es6/block-let-semantics.js#L93)
+```javascript
+// This is the slice of code, visit the link above to review the full source 
+for (var kw of ['let x = 2', 'const x = 2', 'class x { }']) {
+  // Use before initialization with a dynamic lookup.
+  TestAll(`eval("x"); ${kw};`);
+  TestAll(`eval("x + 1;"); ${kw};`);
+```
+# moose-team/friends
+[pkg.js](https://github.com/moose-team/friends/blob/master/pkg.js#L39)
+```javascript
+// This is the slice of code, visit the link above to review the full source 
+  var cmd1 = `${prefix}${rimraf} ${outputPath}`
+  var cmd2 = `${prefix}${electronPackager} . ${appName} ` +
+    `--platform=${plat} ` +
+    `--arch=${arch} ` +
+```
+# joemccann/dillinger
+[plugins/core/server.js](https://github.com/joemccann/dillinger/blob/master/plugins/core/server.js#L58)
+```javascript
+// This is the slice of code, visit the link above to review the full source 
+      // For some reason IE and Chrome ignore the filename
+      // field when Content-Type: text/plain;
+      res.set('Content-Disposition', `inline; filename="${name}"`);
+    }
+```
+# mozilla/tofino
+[build/task-build-main-process.js](https://github.com/mozilla/tofino/blob/master/build/task-build-main-process.js#L17)
+```javascript
+// This is the slice of code, visit the link above to review the full source 
+
+  if (!(await shouldRebuild(id, [SRC_DIR, id]))) {
+    logger.info(colors.green(`No changes in ${id}.`));
+    return { close: () => {} };
+```
+[test/unit/user-agent-service/test-storage.js](https://github.com/mozilla/tofino/blob/master/test/unit/user-agent-service/test-storage.js#L98)
+```javascript
+// This is the slice of code, visit the link above to review the full source 
+
+        const now = microtime.now();
+        await storage.db.run(`INSERT INTO placeEvents (id, url, ts) VALUES (1, \'http://example.com/\', ${now})`);
+        await storage.db.run(`INSERT INTO sessionStarts (id, ts) VALUES (0, ${now})`);
+```
+# plouc/mozaik
+[src/Bus.js](https://github.com/plouc/mozaik/blob/master/src/Bus.js#L29)
+```javascript
+// This is the slice of code, visit the link above to review the full source 
+    const send = (subscriptionId, data) => {
+        if (!_.has(subscriptions, subscriptionId)) {
+            mozaik.logger.warn(chalk.red(`No subscription found mathing '${subscriptionId}'`));
+
+```
+# rt2zz/redux-persist
+[src/createPersistor.js](https://github.com/rt2zz/redux-persist/blob/master/src/createPersistor.js#L78)
+```javascript
+// This is the slice of code, visit the link above to review the full source 
+          }, data)
+        } catch (err) {
+          if (process.env.NODE_ENV !== 'production') console.warn(`Error rehydrating data for key "${key}"`, subState, err)
+        }
+```
+# flipace/lovli.js
+[config/webpack/webpack.config.client.js](https://github.com/flipace/lovli.js/blob/master/config/webpack/webpack.config.client.js#L93)
+```javascript
+// This is the slice of code, visit the link above to review the full source 
+      summary: false,
+      customSummary: (t) => {
+        return console.log(chalk.blue.bold(`Built client in ${t}.`));
+      }
+```
+# ractivejs/ractive
+[test/browser-tests/methods/pop.js](https://github.com/ractivejs/ractive/blob/dev/test/browser-tests/methods/pop.js#L8)
+```javascript
+// This is the slice of code, visit the link above to review the full source 
+
+	[ true, false ].forEach( modifyArrays => {
+		test( `ractive.pop() (modifyArrays: ${modifyArrays})`, t => {
+			t.expect( 2 );
+```
+[test/browser-tests/methods/sort.js](https://github.com/ractivejs/ractive/blob/dev/test/browser-tests/methods/sort.js#L8)
+```javascript
+// This is the slice of code, visit the link above to review the full source 
+
+	[ true, false ].forEach( modifyArrays => {
+		test( `ractive.sort() (modifyArrays: ${modifyArrays})`, t => {
+			let items = [ 'alice', 'bob', 'charles' ];
+```
+[src/view/items/Yielder.js](https://github.com/ractivejs/ractive/blob/dev/src/view/items/Yielder.js#L34)
+```javascript
+// This is the slice of code, visit the link above to review the full source 
+
+		if ( !template ) {
+			warnIfDebug( `Could not find template for partial "${name}"`, { ractive: this.ractive });
+			template = [];
+```
+# formly-js/angular-formly
+[src/run/formlyNgModelAttrsManipulator.js](https://github.com/formly-js/angular-formly/blob/master/src/run/formlyNgModelAttrsManipulator.js#L137)
+```javascript
+// This is the slice of code, visit the link above to review the full source 
+  // Utility functions
+  function getNgModelNodes(node, skip) {
+    const selectorNot = angular.isString(skip) ? `:not(${skip})` : ''
+    const skipNot = ':not([formly-skip-ng-model-attrs-manipulator])'
 ```
